@@ -19,6 +19,5 @@ jobs:
       - name: Test
         run: docker compose run --rm app python manage.py test  # Simplified
       - name: Lint
-        run: docker compose run --rm app ruff
+        run: docker compose run --rm app sh -c "ruff"
 
-   
